@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    Downloader
+{% endblock %}
+
+{% block content %}
+    <h1>Convert Youtube link</h1>
+    <form method="POST" action="{% url 'index' %}">
+        {% include 'form.html' with button_text="Отправить" %}
+    </form>
+{% endblock %}
